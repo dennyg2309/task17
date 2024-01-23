@@ -1,0 +1,145 @@
+main { display: grid;
+    grid-template-columns: 6fr 24fr 6fr;
+    
+    grid-template-areas: "header header header"
+                         "nav section aside"
+                         "nav footer footer";
+    margin: 0%;
+    padding: 3px;
+    grid-column-gap: 0px ;
+    grid-row-gap: 0px;
+    background-color: red;
+
+}
+
+header { 
+    text-align: center;
+    grid-area: header;
+    padding: 50px;
+    margin: 3px;
+    background-color: brown;
+    
+    
+
+}
+
+
+nav {
+    grid-area: nav;
+    text-align: center;
+    padding: 50px;
+    background-color: brown;
+    margin: 3px;
+
+}
+
+
+section {
+    text-align: center;
+    grid-area: section;
+    padding: 50px;
+    margin: 3px;
+    background-color: brown;
+
+}
+
+aside {
+    grid-area: aside;
+    text-align: center;
+    padding: 50px;
+    margin: 3px;
+    background-color: brown;
+
+}
+
+footer {
+    text-align: center;
+    grid-area: footer;
+    padding: 50px;
+    background-color: brown;
+    display: table;
+    margin: 3px;
+    
+}
+
+@media (min-width:1024px) {
+    main {
+        background-color: red;
+    }
+
+    footer {
+        background-color: brown;
+    }
+
+    aside {
+        background-color: brown;
+    }
+
+    section {
+        background-color: brown;
+    }
+
+    header {
+        background-color: brown;
+    }
+
+    nav {
+        background-color: brown;
+    }
+
+    
+}
+
+@media (min-width:601px) and (max-width:1023px) {
+    main {
+        background-color: green;
+    }
+
+    footer {
+        background-color: yellowgreen;
+    }
+
+    aside {
+        background-color: yellowgreen;
+    }
+
+    section {
+        background-color: yellowgreen;
+    }
+
+    header {
+        background-color: yellowgreen;
+    }
+
+    nav {
+        background-color: yellowgreen;
+    }
+
+    
+}
+
+@media (max-width:600px){
+    main {
+        background-color: blue;
+    }
+
+    footer {
+        background-color: lightblue;
+    }
+
+    aside {
+        background-color: lightblue;
+    }
+
+    section {
+        background-color: lightblue;
+    }
+
+    header {
+        background-color: lightblue;
+    }
+
+    nav {
+        background-color: lightblue;
+    }
+}
